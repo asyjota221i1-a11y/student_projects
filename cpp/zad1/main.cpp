@@ -3,27 +3,23 @@
 using namespace std;
 
 int main(){
-	cout<<"witaj swiecie"<<endl;
-	cout<<"podaj wiek"<<endl;
-	int x;
-	cin>>x;
-	cout<<"Podaj wiek nastepnej osoby"<<endl;
-	int y;
-	cin>>y;
-	cout<<"w sumie macie lat "<<x+y<<endl;
-	if(x+y >100){
-	cout<<"macie w sumie więcej niż 100"<<endl;
+	char x ='e';
+	int wynik = 0;
+	int a = 0;
+	while(x!='q'){
+	cout<<"kliknij q by zatrzymać"<<endl;
+	cout<<"Podaj liczbę: "<<endl;
+	cin>>a;
+	if(a>=0){
+		wynik=wynik + a;
+		cout<<"  Czy dodać następną liczbę?tak(t)/nie(n)"<<endl;
+		cin>>x;
+	}else{
+		cout<<"Nie możesz podawać wartości ujemnych!"<<endl;
 	}
-	else{
-	count<<"macie mniej lub 100 lat"<<endl;
-	}
-		if(x>y){
-		count<<"osoba pierwsza jest starsza"<<endl;
-		}
-			if(x<y){
-		count<<"osoba druga jest starsza"<<endl;
-			}
 
+}
+cout<<"Suma wynosi: "<<wynik;
 
 	return 0;
 }
